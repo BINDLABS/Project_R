@@ -34,3 +34,29 @@ Example :
 ```java
 ArrayList<Coin> coins = api.getAllCoin();
 ```
+</br>
+## 거래기록
+```java
+public ArrayList<Tx> getTransactions(String type){}
+
+public class Tx {
+    public String type;
+    public String addr;
+    public String amount;
+    public long timestamp;
+    public String diff;
+}
+```
+Example : 
+```java
+ArrayList<Tx> transactions = api.getTransactions("xrp");
+```
+</br>
+## 프로필 이름
+```java
+public String getProfileName(String addr,final StringCallback callback){}
+```
+Example : 
+```java
+String name = api.getProfileName("");
+```
