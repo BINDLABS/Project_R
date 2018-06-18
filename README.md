@@ -15,6 +15,7 @@
     public String won;
   }</code><br>
 <br>
+
 4. 거래기록<br>
 <code></code>
 
