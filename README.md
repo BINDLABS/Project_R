@@ -87,7 +87,7 @@ String detail = profile.get("detail");//프로필 내용
 ```
 </br>
 
-## ~~결제(추가작업 필요)~~
+## ~~결제~~(추가작업 필요)
 ```java
 public int confirmPayment(){}// 0:결제실패, 1:결제성공
 ```
@@ -104,4 +104,44 @@ public int setAPI(String apikey, String secretkey){}// 0:실패, 1:성공
 Example : 
 ```java
 api.setAPI("","");
+```
+</br>
+
+## 프로필설정 - 전체
+```java
+public String setProfile(int uid,String lt,String name, Bitmap pic, String detail){}//결과
+```
+Example : 
+```java
+api.setProfile(0,loginToken,"이름",bitmap,"프로필설명");
+```
+</br>
+
+## 프로필설정 - 이름
+```java
+public String setProfileName(int uid,String lt,String name){}//결과
+```
+Example : 
+```java
+api.setProfileName(0,loginToken,"이름");
+```
+</br>
+
+## 프로필설정 - 사진
+```java
+public String setProfilePicture(int uid,String lt,Bitmap pic){}//결과
+```
+Example : 
+```java
+api.setProfilePicture(0,loginToken,bitmap);
+```
+</br>
+
+## 프로필설정 - 설명
+```java
+public String setProfileDetail(int uid,String lt,String detail){}//결과
+```
+Example : 
+```java
+api.setProfileDetail(0,loginToken,"프로필설명");
 ```
