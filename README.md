@@ -7,7 +7,7 @@
 <code>public Map<String, String> getTotalWon(){}</code><br>Example : <code>String amount = api.getTotalWon().get("won");<br></code>
 
 3. 본인 보유 코인 및 금액<br>
-<code>public ArrayList<Coin> getAllCoin(){}</code><br>Example : <code>ArrayList<Coin> coins = api.getAllCoin();<br></code>
+<code>public ArrayList\<Coin\> getAllCoin(){}</code><br>Example : <code>ArrayList\<Coin\> coins = api.getAllCoin();<br></code>
 <br>Coin -<br>
 <code>public class Coin {
     public String type;
