@@ -56,7 +56,7 @@ ArrayList<Tx> transactions = api.getTransactions("xrp");
 
 ## 프로필 이름
 ```java
-public String getProfileName(String addr,final StringCallback callback){}
+public String getProfileName(String addr){}
 ```
 Example : 
 ```java
