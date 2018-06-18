@@ -85,3 +85,23 @@ String name = profile.get("name");//프로필 이름
 String pic = profile.get("pic");//프로필 이미지 주소
 String detail = profile.get("detail");//프로필 내용
 ```
+</br>
+
+## ~~결제(추가작업 필요)
+```java
+public int confirmPayment(){}// 0:결제실패, 1:결제성공
+```
+Example : 
+```java
+api.confirmPayment();
+```
+</br>
+
+## API키 설정(빗썸)
+```java
+public int setAPI(String apikey, String secretkey){}// 0:실패, 1:성공
+```
+Example : 
+```java
+api.setAPI("","");
+```
