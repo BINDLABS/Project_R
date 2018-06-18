@@ -8,7 +8,7 @@ Example :
 ```java
 MainAPI api = new MainAPI(MainActivity.this);
 ```
-\
+</br>
 
 ## 본인 보유 총 금액 (원화)
 ```java
@@ -18,7 +18,7 @@ Example :
 ```java
 String amount = api.getTotalWon().get("won");
 ```
-\
+</br>
 
 ## 본인 보유 코인 및 금액
 ```java
