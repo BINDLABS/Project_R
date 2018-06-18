@@ -35,6 +35,7 @@ Example :
 ArrayList<Coin> coins = api.getAllCoin();
 ```
 </br>
+
 ## 거래기록
 ```java
 public ArrayList<Tx> getTransactions(String type){}
@@ -52,6 +53,7 @@ Example :
 ArrayList<Tx> transactions = api.getTransactions("xrp");
 ```
 </br>
+
 ## 프로필 이름
 ```java
 public String getProfileName(String addr,final StringCallback callback){}
