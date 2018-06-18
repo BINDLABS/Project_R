@@ -1,6 +1,6 @@
 # Project_R
 
-1. Initialize - (com.bindlabs.projectr.main.MainAPI)
+### Initialize - (com.bindlabs.projectr.main.MainAPI)
 ```java
 public MainAPI(Context c){}
 ```
@@ -10,7 +10,7 @@ MainAPI api = new MainAPI(MainActivity.this);
 ```
 
 
-2. 본인 보유 총 금액 (원화)
+### 본인 보유 총 금액 (원화)
 ```java
 public Map<String, String> getTotalWon(){}
 ```
@@ -20,7 +20,7 @@ String amount = api.getTotalWon().get("won");
 ```
 
 
-3. 본인 보유 코인 및 금액
+### 본인 보유 코인 및 금액
 ```java
 public ArrayList\<Coin\> getAllCoin(){}
 ```
