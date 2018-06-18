@@ -87,14 +87,14 @@ String detail = profile.get("detail");//프로필 내용
 ```
 </br>
 
-## ~~결제(추가작업 필요)
-```java
+## ~~결제(추가작업 필요)~~
+~~```java
 public int confirmPayment(){}// 0:결제실패, 1:결제성공
-```
-Example : 
-```java
+```~~
+~~Example : ~~
+~~```java
 api.confirmPayment();
-```
+```~~
 </br>
 
 ## API키 설정(빗썸)
