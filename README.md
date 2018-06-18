@@ -1,4 +1,4 @@
-# Project_R V_1
+# Project_R V_1.0
 
 ## Initialize - (com.bindlabs.projectr.main.MainAPI)
 ```java
