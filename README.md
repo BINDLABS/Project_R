@@ -23,14 +23,13 @@ String amount = api.getTotalWon().get("won");
 ## 본인 보유 코인 및 금액
 ```java
 public ArrayList<Coin> getAllCoin(){}
+public class Coin {
+    public String type;
+    public String coin;
+    public String won;
+}
 ```
 Example : 
 ```java
 ArrayList<Coin> coins = api.getAllCoin();
-
-    public class Coin {
-        public String type;
-        public String coin;
-        public String won;
-    }
 ```
