@@ -62,3 +62,13 @@ Example :
 ```java
 String name = api.getProfileName("");
 ```
+</br>
+
+## 총 결제 코인(리플)
+```java
+public double getXrpFinalCost(double won){}
+```
+Example : 
+```java
+double xrp = api.getXrpFinalCost(10000);
+```
