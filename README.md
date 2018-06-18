@@ -50,7 +50,7 @@ public class Tx {
 ```
 Example : 
 ```java
-ArrayList<Tx> transactions = api.getTransactions("xrp");
+ArrayList<Tx> transactions = api.getTransactions("all");//all week month
 ```
 </br>
 
