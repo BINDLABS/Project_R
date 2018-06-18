@@ -93,7 +93,7 @@ public int confirmPayment(){}// 0:결제실패, 1:결제성공
 ```
 Example : 
 ```java
-api.confirmPayment();
+int result = api.confirmPayment();
 ```
 </br>
 
@@ -103,7 +103,7 @@ public int setAPI(String apikey, String secretkey){}// 0:실패, 1:성공
 ```
 Example : 
 ```java
-api.setAPI("","");
+int result = api.setAPI("","");
 ```
 </br>
 
@@ -144,4 +144,69 @@ public String setProfileDetail(int uid,String lt,String detail){}//결과
 Example : 
 ```java
 api.setProfileDetail(0,loginToken,"프로필설명");
+```
+</br>
+
+## ~~QR코드 스캔~~(추가작업 필요)
+</br>
+
+## 사진에서 QR코드 인식
+```java
+public void scanImage(Bitmap qr){};
+```
+Example : 
+```java
+api.scanImage(QRbitmap);
+```
+</br>
+
+## ~~푸쉬알림설정~~(추가작업 필요)
+```java
+public int setNotificationAt(String type, double price){}// 0:실패, 1:성공
+```
+Example : 
+```java
+int result = api.setNotificationAt("xrp",1000);
+```
+</br>
+
+## QR코드 생성
+```java
+public Bitmap getQR(String type, long won, int size){}
+```
+Example : 
+```java
+Bitmap qrcode = api.getQR("xrp",10000,120);
+```
+</br>
+
+## 회원가입
+```java
+public int register(String email,String pass,String r_code){}// 0:실패, 1:성공
+```
+Example : 
+```java
+int result = api.register("test@test.com","test password","recommender code");
+```
+</br>
+
+## 로그인
+```java
+public Map<String, String> login(String email,String pass){}
+```
+Example : 
+```java
+Map<String, String> result = api.login("test@test.com","test password");
+String loginToken = result.get("loginToken");
+int uid = Integer.parseInt(result.get("uid"));
+```
+</br>
+
+## 내 지갑주소
+```java
+public String getWallet(String type){}
+```
+Example : 
+```java
+String myWalletAddr = api.getWallet("xrp");
 ```
