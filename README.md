@@ -9,8 +9,12 @@
 3. 본인 보유 코인 및 금액<br>
 <code>public ArrayList<Coin> getAllCoin(){}</code><br>Example : <code>ArrayList<Coin> coins = api.getAllCoin();<br></code>
 <br>
-Coin :<br>
-<code>public class Coin {<br>public String type;<br>public String coin;<br>public String won;<br>}</code><br>
+Coin -<br>
+<code>public class Coin {
+    public String type;
+    public String coin;
+    public String won;
+  }</code><br>
 
 4. 거래기록<br>
 <code></code>
