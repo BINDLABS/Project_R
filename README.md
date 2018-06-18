@@ -2,9 +2,11 @@
 
 1. Initialize - (com.bindlabs.projectr.main.MainAPI)<br>
 <code>public MainAPI(Context c){}</code><br>Example : <code>MainAPI api = new MainAPI(MainActivity.this);</code>
+<br>
 
 2. 본인 보유 총 금액 (원화)<br>
 <code>public Map<String, String> getTotalWon(){}</code><br>Example : <code>String amount = api.getTotalWon().get("won");<br></code>
+<br>
 
 3. 본인 보유 코인 및 금액<br>
 <code>public ArrayList\<Coin\> getAllCoin(){}</code><br>Example : <code>ArrayList\<Coin\> coins = api.getAllCoin();<br></code>
