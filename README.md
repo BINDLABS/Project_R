@@ -66,9 +66,22 @@ String name = api.getProfileName("");
 
 ## 총 결제 코인(리플)
 ```java
-public double getXrpFinalCost(double won){}
+public double getXrpFinalCost(long won){}
 ```
 Example : 
 ```java
 double xrp = api.getXrpFinalCost(10000);
+```
+</br>
+
+## 프로필 전체
+```java
+public Map<String, String> getProfile(String addr){}
+```
+Example : 
+```java
+Map<String, String> profile = api.getProfile("");
+String name = profile.get("name");//프로필 이름
+String pic = profile.get("pic");//프로필 이미지 주소
+String detail = profile.get("detail");//프로필 내용
 ```
